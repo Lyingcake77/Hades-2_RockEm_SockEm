@@ -1,0 +1,45 @@
+[config]
+schemaVersion = "0.0.1"
+
+
+[package]
+namespace = "Lyingcake77"
+name = "New Weapon RockEm SockEm "
+versionNumber = "0.0.1"
+description = "Adds a new set of boxing gloves under the blades."
+websiteUrl = "https://github.com/Lyingcake77/Hades-2_RockEm_SockEm"
+containsNsfwContent = false
+
+[package.dependencies]
+Hell2Modding-Hell2Modding = "1.0.28"
+SGG_Modding-ENVY = "1.0.1"
+SGG_Modding-Chalk = "2.0.2"
+SGG_Modding-ReLoad = "1.0.1"
+SGG_Modding-SJSON = "1.0.0"
+SGG_Modding-ModUtil = "3.1.0"
+
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "./build"
+
+[[build.copy]]
+source = "./CHANGELOG.md"
+target = "./CHANGELOG.md"
+
+[[build.copy]]
+source = "./LICENSE"
+target = "./LICENSE"
+
+[[build.copy]]
+source = "./src"
+target = "./plugins"
+
+
+[publish]
+repository = "https://thunderstore.io"
+communities = [ "hades-ii", ]
+
+[publish.categories]
+hades-ii = [ "mods", ]
